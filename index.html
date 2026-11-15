@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Banco de Formas — PROFE SHOP (uso interno)</title>
+<style>
+  :root{
+    --navy:#0d1b2e; --navy2:#13263f; --gold:#c9a227; --gold2:#e8c85a;
+    --ink:#f2f4f7; --muted:#9fb0c3; --card:#16283f; --line:#27405f;
+    --pdf:#1f7a3d; --link:#205d9e; --portal:#6b3fa0;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  body{margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:var(--navy); color:var(--ink);}
+  header{position:sticky; top:0; z-index:10; background:var(--navy); padding:14px 14px 10px;
+         border-bottom:2px solid var(--gold);}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand .logo{font-weight:800; letter-spacing:.5px; color:var(--gold2); font-size:15px;
+               border:1.5px solid var(--gold); border-radius:8px; padding:5px 8px; white-space:nowrap;}
+  .brand h1{font-size:19px; margin:0; line-height:1.15;}
+  .brand small{display:block; color:var(--muted); font-size:12px; font-weight:400;}
+  .search{margin-top:12px;}
+  .search input{width:100%; font-size:17px; padding:13px 14px; border-radius:12px; border:1px solid var(--line);
+                background:var(--navy2); color:var(--ink); outline:none;}
+  .search input::placeholder{color:var(--muted);}
+  nav.cats{display:flex; gap:8px; overflow-x:auto; padding:12px 14px 2px; scrollbar-width:none;}
+  nav.cats::-webkit-scrollbar{display:none;}
+  nav.cats a{flex:0 0 auto; text-decoration:none; color:var(--ink); background:var(--navy2);
+             border:1px solid var(--line); padding:9px 13px; border-radius:999px; font-size:14px; font-weight:600;}
+  main{padding:6px 14px 40px; max-width:760px; margin:0 auto;}
+  section{margin-top:22px;}
+  section h2{font-size:16px; margin:0 0 4px; color:var(--gold2); text-transform:uppercase; letter-spacing:.6px;}
+  section .agency{color:var(--muted); font-size:12.5px; margin:0 0 10px;}
+  a.form{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink);
+         background:var(--card); border:1px solid var(--line); border-radius:14px;
+         padding:14px; margin-bottom:10px; min-height:64px;}
+  a.form:active{background:var(--navy2);}
+  .num{font-weight:800; font-size:17px; color:var(--gold2); min-width:86px;}
+  .meta{flex:1; min-width:0;}
+  .meta .name{font-size:15px; font-weight:600; line-height:1.25;}
+  .meta .ed{font-size:12px; color:var(--muted); margin-top:2px;}
+  .badge{flex:0 0 auto; font-size:11px; font-weight:700; padding:5px 8px; border-radius:7px; color:#fff; text-transform:uppercase;}
+  .b-pdf{background:var(--pdf);} .b-link{background:var(--link);} .b-portal{background:var(--portal);}
+  .empty{display:none; color:var(--muted); text-align:center; padding:26px 10px; font-size:15px;}
+  footer{color:var(--muted); font-size:12px; text-align:center; padding:0 16px 30px; line-height:1.5;}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">
+    <div class="logo">PROFE SHOP</div>
+    <h1>Banco de Formas<small>Herramienta interna — Omar Cruz Padilla · Notaría y Consultoría</small></h1>
+  </div>
+  <div class="search">
+    <input id="q" type="search" inputmode="search" placeholder="Buscar por número o nombre… (ej. I-485, pasaporte, divorcio)" autocomplete="off">
+  </div>
+</header>
+
+<nav class="cats">
+  <a href="#pasaporte">🛂 Pasaporte</a>
+  <a href="#uscis">🇺🇸 Inmigración</a>
+  <a href="#divorcio">⚖️ Divorcio MD</a>
+  <a href="#notaria">✒️ Notaría</a>
+  <a href="#apostilla">📜 Apostilla</a>
+  <a href="#mva">🚗 MVA</a>
+  <a href="#licencias">🏢 Licencias MD</a>
+  <a href="#eoir">🏛️ Corte Inmigración</a>
+</nav>
+
+<main id="list">
+
+  <section id="pasaporte">
+    <h2>Pasaporte de EE.UU.</h2>
+    <p class="agency">U.S. Department of State · travel.state.gov / eForms</p>
+
+    <a class="form" href="formas/ds11.pdf" data-s="ds-11 ds11 pasaporte nuevo application passport primera vez menor">
+      <div class="num">DS-11</div>
+      <div class="meta"><div class="name">Application for a U.S. Passport</div><div class="ed">Edición 04-2025 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/ds82.pdf" data-s="ds-82 ds82 renovacion renewal pasaporte correo">
+      <div class="num">DS-82</div>
+      <div class="meta"><div class="name">U.S. Passport Renewal Application for Eligible Individuals</div><div class="ed">Edición 04-2025 · PDF para imprimir</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/ds64.pdf" data-s="ds-64 ds64 perdido robado lost stolen pasaporte">
+      <div class="num">DS-64</div>
+      <div class="meta"><div class="name">Statement Regarding a Lost or Stolen U.S. Passport</div><div class="ed">PDF para imprimir · OMB 1405-0014</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/ds3053.pdf" data-s="ds-3053 ds3053 consentimiento menor hijo pasaporte consent minor">
+      <div class="num">DS-3053</div>
+      <div class="meta"><div class="name">Statement of Consent: Issuance of a U.S. Passport to a Minor Under Age 16</div><div class="ed">Edición 10-2024 · PDF para imprimir</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/ds86.pdf" data-s="ds-86 ds86 no recibi non-receipt pasaporte">
+      <div class="num">DS-86</div>
+      <div class="meta"><div class="name">Statement of Non-Receipt of a U.S. Passport</div><div class="ed">Edición 10-2024 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+  </section>
+
+  <section id="uscis">
+    <h2>Inmigración — USCIS</h2>
+    <p class="agency">U.S. Citizenship and Immigration Services · uscis.gov</p>
+
+    <a class="form" href="formas/ar-11.pdf" data-s="ar-11 ar11 cambio direccion address uscis mudanza">
+      <div class="num">AR-11</div>
+      <div class="meta"><div class="name">Alien's Change of Address Card</div><div class="ed">Edición 11/02/22 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-90.pdf" data-s="i-90 i90 green card residencia reemplazo replace permanent resident">
+      <div class="num">I-90</div>
+      <div class="meta"><div class="name">Application to Replace Permanent Resident Card</div><div class="ed">Edición 01/20/25 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-130.pdf" data-s="i-130 i130 peticion familiar relative esposa esposo padres hijos">
+      <div class="num">I-130</div>
+      <div class="meta"><div class="name">Petition for Alien Relative</div><div class="ed">Edición 04/01/24 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-131.pdf" data-s="i-131 i131 permiso viaje travel parole advance">
+      <div class="num">I-131</div>
+      <div class="meta"><div class="name">Application for Travel Documents, Parole Documents, and Arrival/Departure Records</div><div class="ed">Edición 01/20/25 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-485.pdf" data-s="i-485 i485 ajuste estatus residencia green card adjustment status">
+      <div class="num">I-485</div>
+      <div class="meta"><div class="name">Application to Register Permanent Residence or Adjust Status</div><div class="ed">Edición 09/18/26 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-765.pdf" data-s="i-765 i765 permiso trabajo employment authorization ead">
+      <div class="num">I-765</div>
+      <div class="meta"><div class="name">Application for Employment Authorization</div><div class="ed">Edición 08/21/25 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-864.pdf" data-s="i-864 i864 affidavit support patrocinador sostenimiento">
+      <div class="num">I-864</div>
+      <div class="meta"><div class="name">Affidavit of Support Under Section 213A of the INA</div><div class="ed">Edición 08/24/26 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/i-589.pdf" data-s="i-589 i589 asilo asylum withholding refugio">
+      <div class="num">I-589</div>
+      <div class="meta"><div class="name">Application for Asylum and for Withholding of Removal</div><div class="ed">Edición 07/28/26 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/n-400.pdf" data-s="n-400 n400 ciudadania naturalizacion naturalization citizenship">
+      <div class="num">N-400</div>
+      <div class="meta"><div class="name">Application for Naturalization</div><div class="ed">Edición 01/20/25 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/g-1145.pdf" data-s="g-1145 g1145 notificacion electronica e-notification texto email">
+      <div class="num">G-1145</div>
+      <div class="meta"><div class="name">e-Notification of Application/Petition Acceptance</div><div class="ed">Edición 09/26/14 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+  </section>
+
+  <section id="divorcio">
+    <h2>Divorcio — Maryland</h2>
+    <p class="agency">Maryland Judiciary · mdcourts.gov (el sitio bloquea la descarga directa: se abre el PDF oficial)</p>
+
+    <a class="form" href="https://www.mdcourts.gov/sites/default/files/court-forms/family/forms/ccdr020.pdf/ccdr020.pdf" target="_blank" rel="noopener" data-s="cc-dr-020 ccdr020 demanda divorcio absoluto complaint absolute divorce">
+      <div class="num">CC-DR-020</div>
+      <div class="meta"><div class="name">Complaint for Absolute Divorce</div><div class="ed">Rev. 08/2024 · Incluye mutuo consentimiento (¶13)</div></div>
+      <div class="badge b-link">Enlace</div></a>
+
+    <a class="form" href="https://www.mdcourts.gov/sites/default/files/court-forms/ccdr116.pdf" target="_blank" rel="noopener" data-s="cc-dr-116 ccdr116 acuerdo mutuo consentimiento marital settlement agreement convenio">
+      <div class="num">CC-DR-116</div>
+      <div class="meta"><div class="name">Marital Settlement Agreement</div><div class="ed">Rev. 10/2025 · La forma del divorcio por mutuo consentimiento</div></div>
+      <div class="badge b-link">Enlace</div></a>
+
+    <a class="form" href="https://www.mdcourts.gov/sites/default/files/court-forms/courtforms/circuit/ccdcm001.pdf/ccdcm001.pdf" target="_blank" rel="noopener" data-s="cc-dcm-001 ccdcm001 hoja informacion caso case information report">
+      <div class="num">CC-DCM-001</div>
+      <div class="meta"><div class="name">Civil–Domestic Case Information Report</div><div class="ed">Rev. 10/2023 · Hoja de información del caso vigente</div></div>
+      <div class="badge b-link">Enlace</div></a>
+  </section>
+
+  <section id="notaria">
+    <h2>Notaría — Certificados MD</h2>
+    <p class="agency">Documentos de trabajo · texto estándar de certificado notarial de Maryland</p>
+
+    <a class="form" href="formas/notaria-md-acknowledgment.pdf" data-s="acknowledgment reconocimiento firma notarial certificado md acknowledgment">
+      <div class="num">ACK</div>
+      <div class="meta"><div class="name">Certificate of Acknowledgment — Maryland (individual y representante)</div><div class="ed">PDF llenable · 1 página</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/notaria-md-jurat.pdf" data-s="jurat juramento afirmacion notarial certificado md sworn affirmed">
+      <div class="num">JURAT</div>
+      <div class="meta"><div class="name">Jurat — Maryland</div><div class="ed">PDF llenable · 1 página</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/notaria-afidavit-general.pdf" data-s="afidavit affidavit general declaracion jurada blanco">
+      <div class="num">AFF</div>
+      <div class="meta"><div class="name">Affidavit — General (en blanco, con jurat)</div><div class="ed">PDF llenable · 1 página</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+  </section>
+
+  <section id="apostilla">
+    <h2>Apostilla — Maryland</h2>
+    <p class="agency">Maryland Secretary of State · Certifications · sos.maryland.gov</p>
+
+    <a class="form" href="formas/apostilla-md-checklist.pdf" data-s="apostilla apostille autenticacion authentication checklist correo secretary state certificacion">
+      <div class="num">SOS</div>
+      <div class="meta"><div class="name">Apostille / Authentication — Mailing Checklist &amp; Request Form</div><div class="ed">PDF llenable · hoja de envío por correo del SOS</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+  </section>
+
+  <section id="mva">
+    <h2>MVA — Maryland</h2>
+    <p class="agency">Maryland Motor Vehicle Administration · mva.maryland.gov</p>
+
+    <a class="form" href="formas/vr-005.pdf" data-s="vr-005 vr005 titulo certificate title vehiculo carro">
+      <div class="num">VR-005</div>
+      <div class="meta"><div class="name">Application for Certificate of Title</div><div class="ed">Rev. (07-26) · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="formas/vr-008.pdf" data-s="vr-008 vr008 placas registro plates stickers transfer vehiculo">
+      <div class="num">VR-008</div>
+      <div class="meta"><div class="name">Application for New Plates/Stickers and Transfer of Plates or Non-Title Trailers</div><div class="ed">Rev. (08-26) · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="https://mva.maryland.gov/Pages/ChangeOfAddress.aspx" target="_blank" rel="noopener" data-s="vr-154 vr154 cambio direccion address mva licencia registro mudanza">
+      <div class="num">VR-154</div>
+      <div class="meta"><div class="name">Application for Maryland Change of Address</div><div class="ed">Página oficial del MVA (el PDF ya no se ofrece en línea)</div></div>
+      <div class="badge b-link">Enlace</div></a>
+
+    <a class="form" href="https://mva.maryland.gov/" target="_blank" rel="noopener" data-s="licencia conducir id identification card solicitud mymva driver license">
+      <div class="num">DL / ID</div>
+      <div class="meta"><div class="name">Driver's License / Identification Card — Application (myMVA)</div><div class="ed">Sin PDF oficial: se solicita en línea o en sucursal</div></div>
+      <div class="badge b-portal">Portal</div></a>
+  </section>
+
+  <section id="licencias">
+    <h2>Licencias y Comisiones — Maryland</h2>
+    <p class="agency">Secretary of State · Clerk of the Circuit Court</p>
+
+    <a class="form" href="https://www.egov.maryland.gov/sos/notary/#/home" target="_blank" rel="noopener" data-s="notario comision solicitud renovacion notary commission renewal sos omar">
+      <div class="num">NOTARY</div>
+      <div class="meta"><div class="name">Notary Public Commission — Application &amp; Renewal (SOS eGov)</div><div class="ed">Portal oficial: solicitud nueva y renovación en línea</div></div>
+      <div class="badge b-portal">Portal</div></a>
+
+    <a class="form" href="https://princegeorgescourts.org/192/Business-Licenses" target="_blank" rel="noopener" data-s="trader licencia negocio business license prince george clerk corte circuito">
+      <div class="num">TRADER'S</div>
+      <div class="meta"><div class="name">Business / Trader's License — Prince George's County (Clerk of the Circuit Court)</div><div class="ed">Portal oficial del condado: aplicaciones nuevas en línea</div></div>
+      <div class="badge b-portal">Portal</div></a>
+  </section>
+
+  <section id="eoir">
+    <h2>Corte de Inmigración</h2>
+    <p class="agency">EOIR · U.S. Department of Justice — ICE · DHS</p>
+
+    <a class="form" href="formas/eoir-33ic.pdf" data-s="eoir-33 eoir33 cambio direccion corte inmigracion change address immigration court deportacion">
+      <div class="num">EOIR-33/IC</div>
+      <div class="meta"><div class="name">Change of Address/Contact Information Form — Immigration Court</div><div class="ed">Rev. Feb. 2026 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+
+    <a class="form" href="https://www.justice.gov/eoir/eoir-forms" target="_blank" rel="noopener" data-s="eoir-28 eoir28 comparecencia representante abogado entry appearance attorney representative corte">
+      <div class="num">EOIR-28</div>
+      <div class="meta"><div class="name">Notice of Entry of Appearance as Attorney or Representative Before the Immigration Court</div><div class="ed">Rev. Feb. 2025 · Página oficial de formas EOIR</div></div>
+      <div class="badge b-link">Enlace</div></a>
+
+    <a class="form" href="formas/i-246.pdf" data-s="i-246 i246 suspension deportacion stay removal ice detencion">
+      <div class="num">I-246</div>
+      <div class="meta"><div class="name">Application for Stay of Deportation or Removal (ICE)</div><div class="ed">Edición 10/24 · Exp. 10/31/2027 · PDF llenable</div></div>
+      <div class="badge b-pdf">PDF</div></a>
+  </section>
+
+  <div class="empty" id="empty">Sin resultados para esa búsqueda.</div>
+</main>
+
+<footer>
+  Banco interno de acceso rápido — las formas oficiales son los archivos íntegros de cada agencia, sin modificar.<br>
+  Verificado el 14 de noviembre de 2026 · PROFE SHOP
+</footer>
+
+<script>
+  var q = document.getElementById('q');
+  var forms = Array.prototype.slice.call(document.querySelectorAll('a.form'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section'));
+  var empty = document.getElementById('empty');
+  function norm(s){ return (s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,''); }
+  q.addEventListener('input', function(){
+    var needle = norm(q.value.trim());
+    var anyVisible = false;
+    forms.forEach(function(f){
+      var hay = norm(f.getAttribute('data-s') + ' ' + f.textContent);
+      var show = !needle || hay.indexOf(needle) !== -1;
+      f.style.display = show ? '' : 'none';
+      if (show) anyVisible = true;
+    });
+    sections.forEach(function(s){
+      var vis = Array.prototype.slice.call(s.querySelectorAll('a.form')).some(function(f){ return f.style.display !== 'none'; });
+      s.style.display = vis ? '' : 'none';
+    });
+    empty.style.display = anyVisible ? 'none' : 'block';
+  });
+</script>
+</body>
+</html>
